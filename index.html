@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="CalC.css" rel="stylesheet">
+    </head>
+    <body>
+
+
+        <div class="calculator-body">
+
+            <div class="calc-display">
+
+                <input type="text" name="screen" id ="screen">
+                
+            </div>
+
+            <div class="calc-button-area">
+                <button value="AC" onclick="clr()">AC</button>
+                <button value="CE" onclick="clrLast()" >CE</button>
+                <button value="%" onclick="show('%')">%</button>
+                <button id="operators"    value="/" onclick="show('/')">/</button>
+
+
+                <button  value="7" onclick="show('7')">7</button>
+                <button value="8"  onclick="show('8')">8</button>
+                <button value="9"  onclick="show('9')">9</button>
+                <button  id="operators"   value="*"  onclick="show('*')">*</button>
+               
+                <button value="4" type="" onclick="show('4')">4</button>
+                <button value="5" type="" onclick="show('5')">5</button>
+                <button value="6" type="" onclick="show('6')">6</button>
+                <button   id="operators"  value="-" type="" onclick="show('-')">-</button>
+              
+               
+                <button value="1" type="" onclick="show('1')">1</button>
+                <button value="2" type="" onclick="show('2')">2</button>
+                <button value="3" type="" onclick="show('3')">3</button>
+                <button  id="operators"  value="+" type="" onclick="show('+')">+</button>
+              
+              
+                <button value="0" id="zero-btn" type="" onclick="show('0')">0</button>
+                <button value="" type="" onclick="show('.')">.</button>
+               
+     
+               
+               
+                <button  id="operators" type="" onclick="solve()">=</button>
+            </div>
+
+                
+        </div>
+
+      
+    
+    </body>
+    <script src="CalC.js"></script>
+</html>
